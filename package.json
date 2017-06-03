@@ -1,8 +1,8 @@
 {
-  "name": "ReactSnippets",
-  "description": "Code snippets for Reactjs development in ES6 syntax",
+  "name": "ReactNewSnippets",
+  "description": "My Code snippets for Reactjs development in ES6 syntax",
   "version": "1.0.0",
-  "displayName": "Reactjs code snippets",
+  "displayName": "Reactjs new code snippets",
   "publisher": "mohithg",
   "icon": "images/react.png",
   "galleryBanner": {

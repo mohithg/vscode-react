@@ -25,7 +25,7 @@
 
   "reactWithWebpackDefaults": {
     "prefix": "rwwd",
-    "body": "class ${1:componentName} extends React.Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+    "body": "class ${1:componentName} extends React.Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t\tthis.state = {};\n\n\t}\n\n\trender() {\n\t\treturn(\n\t\t\t<div>\n\n\t\t\t$0</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.defaultProps = {\n\n};\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
     "description": "Creates a React component class with constructor, empty state, proptypes and export in ES6 module system without imports. (Mostly used when React, Proptypes are provided by webpack provide plugin)"
   },
 
@@ -280,5 +280,10 @@
     "prefix": "ptshr",
     "body": "PropTypes.shape({\n\t$0\n}).isRequired,",
     "description": "An object taking on a particular shape required"
+  },
+  "defaultProps": {
+    "prefix": "dpt",
+    "body": "$0.defaultProps {\n\t\n}",
+    "description": "Default Props"
   }
 }
